@@ -1,0 +1,1442 @@
+html {
+  background-color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+body {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+a {
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+pre {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.box {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-text {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary:hover,
+.button.is-primary.is-hovered {
+  background-color: rgb(249, 249, 249);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary:focus,
+.button.is-primary.is-focused {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary:active,
+.button.is-primary.is-active {
+  background-color: rgb(242, 242, 242);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary[disabled],
+fieldset[disabled] .button.is-primary {
+  background-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary.is-inverted {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary.is-inverted:hover,
+.button.is-primary.is-inverted.is-hovered {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary.is-inverted[disabled],
+fieldset[disabled] .button.is-primary.is-inverted {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary.is-outlined {
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary.is-outlined:hover,
+.button.is-primary.is-outlined.is-hovered,
+.button.is-primary.is-outlined:focus,
+.button.is-primary.is-outlined.is-focused {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary.is-outlined[disabled],
+fieldset[disabled] .button.is-primary.is-outlined {
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary.is-inverted.is-outlined {
+  border-color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary.is-inverted.is-outlined:hover,
+.button.is-primary.is-inverted.is-outlined.is-hovered,
+.button.is-primary.is-inverted.is-outlined:focus,
+.button.is-primary.is-inverted.is-outlined.is-focused {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-primary.is-inverted.is-outlined {
+  border-color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary.is-light {
+  background-color: rgb(255, 255, 255);
+  color: rgb(74, 74, 74);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary.is-light:hover,
+.button.is-primary.is-light.is-hovered {
+  background-color: rgb(249, 249, 249);
+  color: rgb(74, 74, 74);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-primary.is-light:active,
+.button.is-primary.is-light.is-active {
+  background-color: rgb(242, 242, 242);
+  color: rgb(74, 74, 74);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link {
+  background-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link:hover,
+.button.is-link.is-hovered {
+  background-color: rgb(244, 148, 37);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link:focus,
+.button.is-link.is-focused {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link:active,
+.button.is-link.is-active {
+  background-color: rgb(244, 142, 25);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link[disabled],
+fieldset[disabled] .button.is-link {
+  background-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link.is-inverted {
+  background-color: rgb(255, 255, 255);
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link.is-inverted:hover,
+.button.is-link.is-inverted.is-hovered {
+  background-color: rgb(242, 242, 242);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link.is-inverted[disabled],
+fieldset[disabled] .button.is-link.is-inverted {
+  background-color: rgb(255, 255, 255);
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link.is-outlined {
+  border-color: rgb(245, 154, 49);
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link.is-outlined:hover,
+.button.is-link.is-outlined.is-hovered,
+.button.is-link.is-outlined:focus,
+.button.is-link.is-outlined.is-focused {
+  background-color: rgb(245, 154, 49);
+  border-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link.is-outlined[disabled],
+fieldset[disabled] .button.is-link.is-outlined {
+  border-color: rgb(245, 154, 49);
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link.is-inverted.is-outlined {
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link.is-inverted.is-outlined:hover,
+.button.is-link.is-inverted.is-outlined.is-hovered,
+.button.is-link.is-inverted.is-outlined:focus,
+.button.is-link.is-inverted.is-outlined.is-focused {
+  background-color: rgb(255, 255, 255);
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-link.is-inverted.is-outlined {
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link.is-light {
+  background-color: rgb(254, 246, 236);
+  color: rgb(156, 87, 8);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link.is-light:hover,
+.button.is-link.is-light.is-hovered {
+  background-color: rgb(253, 240, 224);
+  color: rgb(156, 87, 8);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-link.is-light:active,
+.button.is-link.is-light.is-active {
+  background-color: rgb(253, 235, 212);
+  color: rgb(156, 87, 8);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info {
+  background-color: rgb(16, 16, 33);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info:hover,
+.button.is-info.is-hovered {
+  background-color: rgb(12, 12, 24);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info:focus,
+.button.is-info.is-focused {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info:active,
+.button.is-info.is-active {
+  background-color: rgb(8, 8, 16);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info[disabled],
+fieldset[disabled] .button.is-info {
+  background-color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info.is-inverted {
+  background-color: rgb(255, 255, 255);
+  color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info.is-inverted:hover,
+.button.is-info.is-inverted.is-hovered {
+  background-color: rgb(242, 242, 242);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info.is-inverted[disabled],
+fieldset[disabled] .button.is-info.is-inverted {
+  background-color: rgb(255, 255, 255);
+  color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info.is-outlined {
+  border-color: rgb(16, 16, 33);
+  color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info.is-outlined:hover,
+.button.is-info.is-outlined.is-hovered,
+.button.is-info.is-outlined:focus,
+.button.is-info.is-outlined.is-focused {
+  background-color: rgb(16, 16, 33);
+  border-color: rgb(16, 16, 33);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info.is-outlined[disabled],
+fieldset[disabled] .button.is-info.is-outlined {
+  border-color: rgb(16, 16, 33);
+  color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info.is-inverted.is-outlined {
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info.is-inverted.is-outlined:hover,
+.button.is-info.is-inverted.is-outlined.is-hovered,
+.button.is-info.is-inverted.is-outlined:focus,
+.button.is-info.is-inverted.is-outlined.is-focused {
+  background-color: rgb(255, 255, 255);
+  color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info.is-inverted.is-outlined[disabled],
+fieldset[disabled] .button.is-info.is-inverted.is-outlined {
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info.is-light {
+  background-color: rgb(241, 241, 248);
+  color: rgb(104, 104, 182);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info.is-light:hover,
+.button.is-info.is-light.is-hovered {
+  background-color: rgb(233, 233, 244);
+  color: rgb(104, 104, 182);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.button.is-info.is-light:active,
+.button.is-info.is-light.is-active {
+  background-color: rgb(224, 224, 240);
+  color: rgb(104, 104, 182);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.notification.is-primary {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.notification.is-primary.is-light {
+  background-color: rgb(255, 255, 255);
+  color: rgb(74, 74, 74);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.notification.is-link {
+  background-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.notification.is-link.is-light {
+  background-color: rgb(254, 246, 236);
+  color: rgb(156, 87, 8);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.notification.is-info {
+  background-color: rgb(16, 16, 33);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.notification.is-info.is-light {
+  background-color: rgb(241, 241, 248);
+  color: rgb(104, 104, 182);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.progress::-webkit-progress-value {
+  background-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.progress::-moz-progress-bar {
+  background-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.progress::-ms-fill {
+  background-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.progress.is-primary::-webkit-progress-value {
+  background-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.progress.is-primary::-moz-progress-bar {
+  background-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.progress.is-primary::-ms-fill {
+  background-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.progress.is-link::-webkit-progress-value {
+  background-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.progress.is-link::-moz-progress-bar {
+  background-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.progress.is-link::-ms-fill {
+  background-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.progress.is-info::-webkit-progress-value {
+  background-color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.progress.is-info::-moz-progress-bar {
+  background-color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.progress.is-info::-ms-fill {
+  background-color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.table td.is-primary,
+.table th.is-primary {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.table td.is-link,
+.table th.is-link {
+  background-color: rgb(245, 154, 49);
+  border-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.table td.is-info,
+.table th.is-info {
+  background-color: rgb(16, 16, 33);
+  border-color: rgb(16, 16, 33);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.table td.is-selected,
+.table th.is-selected {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.table tr.is-selected {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.table tr.is-selected td,
+.table tr.is-selected th {
+  border-color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.tag:not(body) {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.tag:not(body).is-primary {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.tag:not(body).is-primary.is-light {
+  background-color: rgb(255, 255, 255);
+  color: rgb(74, 74, 74);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.tag:not(body).is-link {
+  background-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.tag:not(body).is-link.is-light {
+  background-color: rgb(254, 246, 236);
+  color: rgb(156, 87, 8);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.tag:not(body).is-info {
+  background-color: rgb(16, 16, 33);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.tag:not(body).is-info.is-light {
+  background-color: rgb(241, 241, 248);
+  color: rgb(104, 104, 182);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.subtitle {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.select select:focus,
+.textarea:focus,
+.input:focus,
+.select select.is-focused,
+.is-focused.textarea,
+.is-focused.input,
+.select select:active,
+.textarea:active,
+.input:active,
+.select select.is-active,
+.is-active.textarea,
+.is-active.input {
+  border-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.is-primary.textarea,
+.is-primary.input {
+  border-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.is-link.textarea,
+.is-link.input {
+  border-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.is-info.textarea,
+.is-info.input {
+  border-color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.select.is-primary:not(:hover)::after {
+  border-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.select.is-primary select {
+  border-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.select.is-primary select:hover,
+.select.is-primary select.is-hovered {
+  border-color: rgb(242, 242, 242);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.select.is-link:not(:hover)::after {
+  border-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.select.is-link select {
+  border-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.select.is-link select:hover,
+.select.is-link select.is-hovered {
+  border-color: rgb(244, 142, 25);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.select.is-info:not(:hover)::after {
+  border-color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.select.is-info select {
+  border-color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.select.is-info select:hover,
+.select.is-info select.is-hovered {
+  border-color: rgb(8, 8, 16);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file.is-primary .file-cta {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file.is-primary:hover .file-cta,
+.file.is-primary.is-hovered .file-cta {
+  background-color: rgb(249, 249, 249);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file.is-primary:focus .file-cta,
+.file.is-primary.is-focused .file-cta {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file.is-primary:active .file-cta,
+.file.is-primary.is-active .file-cta {
+  background-color: rgb(242, 242, 242);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file.is-link .file-cta {
+  background-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file.is-link:hover .file-cta,
+.file.is-link.is-hovered .file-cta {
+  background-color: rgb(244, 148, 37);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file.is-link:focus .file-cta,
+.file.is-link.is-focused .file-cta {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file.is-link:active .file-cta,
+.file.is-link.is-active .file-cta {
+  background-color: rgb(244, 142, 25);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file.is-info .file-cta {
+  background-color: rgb(16, 16, 33);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file.is-info:hover .file-cta,
+.file.is-info.is-hovered .file-cta {
+  background-color: rgb(12, 12, 24);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file.is-info:focus .file-cta,
+.file.is-info.is-focused .file-cta {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file.is-info:active .file-cta,
+.file.is-info.is-active .file-cta {
+  background-color: rgb(8, 8, 16);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.file-cta {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.help.is-primary {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.help.is-link {
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.help.is-info {
+  color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.control.has-icons-left .input:focus ~ .icon,
+.control.has-icons-left .select:focus ~ .icon,
+.control.has-icons-right .input:focus ~ .icon,
+.control.has-icons-right .select:focus ~ .icon {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.breadcrumb a {
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.card {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.dropdown-item {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+a.dropdown-item.is-active,
+button.dropdown-item.is-active {
+  background-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.menu-list a {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.menu-list a.is-active {
+  background-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.message.is-primary {
+  background-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.message.is-primary .message-header {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.message.is-primary .message-body {
+  border-color: rgb(255, 255, 255);
+  color: rgb(74, 74, 74);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.message.is-link {
+  background-color: rgb(254, 246, 236);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.message.is-link .message-header {
+  background-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.message.is-link .message-body {
+  border-color: rgb(245, 154, 49);
+  color: rgb(156, 87, 8);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.message.is-info {
+  background-color: rgb(241, 241, 248);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.message.is-info .message-header {
+  background-color: rgb(16, 16, 33);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.message.is-info .message-body {
+  border-color: rgb(16, 16, 33);
+  color: rgb(104, 104, 182);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.message-header {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.message-body {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar {
+  background-color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-primary {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-primary .navbar-brand > .navbar-item,
+.navbar.is-primary .navbar-brand .navbar-link {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-primary .navbar-brand > a.navbar-item:focus,
+.navbar.is-primary .navbar-brand > a.navbar-item:hover,
+.navbar.is-primary .navbar-brand > a.navbar-item.is-active,
+.navbar.is-primary .navbar-brand .navbar-link:focus,
+.navbar.is-primary .navbar-brand .navbar-link:hover,
+.navbar.is-primary .navbar-brand .navbar-link.is-active {
+  background-color: rgb(242, 242, 242);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-primary .navbar-brand .navbar-link::after {
+  border-color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-primary .navbar-burger {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar.is-primary .navbar-start > .navbar-item,
+  .navbar.is-primary .navbar-start .navbar-link,
+  .navbar.is-primary .navbar-end > .navbar-item,
+  .navbar.is-primary .navbar-end .navbar-link {
+    color: rgba(0, 0, 0, 0.7);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar.is-primary .navbar-start > a.navbar-item:focus,
+  .navbar.is-primary .navbar-start > a.navbar-item:hover,
+  .navbar.is-primary .navbar-start > a.navbar-item.is-active,
+  .navbar.is-primary .navbar-start .navbar-link:focus,
+  .navbar.is-primary .navbar-start .navbar-link:hover,
+  .navbar.is-primary .navbar-start .navbar-link.is-active,
+  .navbar.is-primary .navbar-end > a.navbar-item:focus,
+  .navbar.is-primary .navbar-end > a.navbar-item:hover,
+  .navbar.is-primary .navbar-end > a.navbar-item.is-active,
+  .navbar.is-primary .navbar-end .navbar-link:focus,
+  .navbar.is-primary .navbar-end .navbar-link:hover,
+  .navbar.is-primary .navbar-end .navbar-link.is-active {
+    background-color: rgb(242, 242, 242);
+    color: rgba(0, 0, 0, 0.7);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar.is-primary .navbar-start .navbar-link::after,
+  .navbar.is-primary .navbar-end .navbar-link::after {
+    border-color: rgba(0, 0, 0, 0.7);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar.is-primary .navbar-item.has-dropdown:focus .navbar-link,
+  .navbar.is-primary .navbar-item.has-dropdown:hover .navbar-link,
+  .navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link {
+    background-color: rgb(242, 242, 242);
+    color: rgba(0, 0, 0, 0.7);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar.is-primary .navbar-dropdown a.navbar-item.is-active {
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.7);
+    transition: color 0, background-color 0, border-color 0;
+  }
+}
+
+.navbar.is-link {
+  background-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-link .navbar-brand > .navbar-item,
+.navbar.is-link .navbar-brand .navbar-link {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-link .navbar-brand > a.navbar-item:focus,
+.navbar.is-link .navbar-brand > a.navbar-item:hover,
+.navbar.is-link .navbar-brand > a.navbar-item.is-active,
+.navbar.is-link .navbar-brand .navbar-link:focus,
+.navbar.is-link .navbar-brand .navbar-link:hover,
+.navbar.is-link .navbar-brand .navbar-link.is-active {
+  background-color: rgb(244, 142, 25);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-link .navbar-brand .navbar-link::after {
+  border-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-link .navbar-burger {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar.is-link .navbar-start > .navbar-item,
+  .navbar.is-link .navbar-start .navbar-link,
+  .navbar.is-link .navbar-end > .navbar-item,
+  .navbar.is-link .navbar-end .navbar-link {
+    color: rgb(255, 255, 255);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar.is-link .navbar-start > a.navbar-item:focus,
+  .navbar.is-link .navbar-start > a.navbar-item:hover,
+  .navbar.is-link .navbar-start > a.navbar-item.is-active,
+  .navbar.is-link .navbar-start .navbar-link:focus,
+  .navbar.is-link .navbar-start .navbar-link:hover,
+  .navbar.is-link .navbar-start .navbar-link.is-active,
+  .navbar.is-link .navbar-end > a.navbar-item:focus,
+  .navbar.is-link .navbar-end > a.navbar-item:hover,
+  .navbar.is-link .navbar-end > a.navbar-item.is-active,
+  .navbar.is-link .navbar-end .navbar-link:focus,
+  .navbar.is-link .navbar-end .navbar-link:hover,
+  .navbar.is-link .navbar-end .navbar-link.is-active {
+    background-color: rgb(244, 142, 25);
+    color: rgb(255, 255, 255);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar.is-link .navbar-start .navbar-link::after,
+  .navbar.is-link .navbar-end .navbar-link::after {
+    border-color: rgb(255, 255, 255);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar.is-link .navbar-item.has-dropdown:focus .navbar-link,
+  .navbar.is-link .navbar-item.has-dropdown:hover .navbar-link,
+  .navbar.is-link .navbar-item.has-dropdown.is-active .navbar-link {
+    background-color: rgb(244, 142, 25);
+    color: rgb(255, 255, 255);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar.is-link .navbar-dropdown a.navbar-item.is-active {
+    background-color: rgb(245, 154, 49);
+    color: rgb(255, 255, 255);
+    transition: color 0, background-color 0, border-color 0;
+  }
+}
+
+.navbar.is-info {
+  background-color: rgb(16, 16, 33);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-info .navbar-brand > .navbar-item,
+.navbar.is-info .navbar-brand .navbar-link {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-info .navbar-brand > a.navbar-item:focus,
+.navbar.is-info .navbar-brand > a.navbar-item:hover,
+.navbar.is-info .navbar-brand > a.navbar-item.is-active,
+.navbar.is-info .navbar-brand .navbar-link:focus,
+.navbar.is-info .navbar-brand .navbar-link:hover,
+.navbar.is-info .navbar-brand .navbar-link.is-active {
+  background-color: rgb(8, 8, 16);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-info .navbar-brand .navbar-link::after {
+  border-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar.is-info .navbar-burger {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar.is-info .navbar-start > .navbar-item,
+  .navbar.is-info .navbar-start .navbar-link,
+  .navbar.is-info .navbar-end > .navbar-item,
+  .navbar.is-info .navbar-end .navbar-link {
+    color: rgb(255, 255, 255);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar.is-info .navbar-start > a.navbar-item:focus,
+  .navbar.is-info .navbar-start > a.navbar-item:hover,
+  .navbar.is-info .navbar-start > a.navbar-item.is-active,
+  .navbar.is-info .navbar-start .navbar-link:focus,
+  .navbar.is-info .navbar-start .navbar-link:hover,
+  .navbar.is-info .navbar-start .navbar-link.is-active,
+  .navbar.is-info .navbar-end > a.navbar-item:focus,
+  .navbar.is-info .navbar-end > a.navbar-item:hover,
+  .navbar.is-info .navbar-end > a.navbar-item.is-active,
+  .navbar.is-info .navbar-end .navbar-link:focus,
+  .navbar.is-info .navbar-end .navbar-link:hover,
+  .navbar.is-info .navbar-end .navbar-link.is-active {
+    background-color: rgb(8, 8, 16);
+    color: rgb(255, 255, 255);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar.is-info .navbar-start .navbar-link::after,
+  .navbar.is-info .navbar-end .navbar-link::after {
+    border-color: rgb(255, 255, 255);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar.is-info .navbar-item.has-dropdown:focus .navbar-link,
+  .navbar.is-info .navbar-item.has-dropdown:hover .navbar-link,
+  .navbar.is-info .navbar-item.has-dropdown.is-active .navbar-link {
+    background-color: rgb(8, 8, 16);
+    color: rgb(255, 255, 255);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar.is-info .navbar-dropdown a.navbar-item.is-active {
+    background-color: rgb(16, 16, 33);
+    color: rgb(255, 255, 255);
+    transition: color 0, background-color 0, border-color 0;
+  }
+}
+
+.navbar-burger {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar-item,
+.navbar-link {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+.navbar-link.is-active {
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar-item.is-tab:focus,
+.navbar-item.is-tab:hover {
+  border-bottom-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar-item.is-tab.is-active {
+  border-bottom-color: rgb(245, 154, 49);
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+  border-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar-menu {
+    background-color: rgb(16, 16, 33);
+    transition: color 0, background-color 0, border-color 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
+    color: rgb(245, 154, 49);
+    transition: color 0, background-color 0, border-color 0;
+  }
+
+  .navbar-dropdown a.navbar-item.is-active {
+    color: rgb(245, 154, 49);
+    transition: color 0, background-color 0, border-color 0;
+  }
+}
+
+.pagination-link.is-current {
+  background-color: rgb(245, 154, 49);
+  border-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel.is-primary .panel-heading {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel.is-primary .panel-tabs a.is-active {
+  border-bottom-color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel.is-primary .panel-block.is-active .panel-icon {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel.is-link .panel-heading {
+  background-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel.is-link .panel-tabs a.is-active {
+  border-bottom-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel.is-link .panel-block.is-active .panel-icon {
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel.is-info .panel-heading {
+  background-color: rgb(16, 16, 33);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel.is-info .panel-tabs a.is-active {
+  border-bottom-color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel.is-info .panel-block.is-active .panel-icon {
+  color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel-list a {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel-list a:hover {
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel-block.is-active {
+  border-left-color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.panel-block.is-active .panel-icon {
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.tabs a {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.tabs li.is-active a {
+  border-bottom-color: rgb(245, 154, 49);
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.tabs.is-toggle li.is-active a {
+  background-color: rgb(245, 154, 49);
+  border-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-primary {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-primary .title {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-primary .subtitle {
+  color: rgba(0, 0, 0, 0.9);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-primary .subtitle a:not(.button),
+.hero.is-primary .subtitle strong {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero.is-primary .navbar-menu {
+    background-color: rgb(255, 255, 255);
+    transition: color 0, background-color 0, border-color 0;
+  }
+}
+
+.hero.is-primary .navbar-item,
+.hero.is-primary .navbar-link {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-primary a.navbar-item:hover,
+.hero.is-primary a.navbar-item.is-active,
+.hero.is-primary .navbar-link:hover,
+.hero.is-primary .navbar-link.is-active {
+  background-color: rgb(242, 242, 242);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-primary .tabs a {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-primary .tabs.is-boxed a,
+.hero.is-primary .tabs.is-toggle a {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-primary .tabs.is-boxed li.is-active a,
+.hero.is-primary .tabs.is-boxed li.is-active a:hover,
+.hero.is-primary .tabs.is-toggle li.is-active a,
+.hero.is-primary .tabs.is-toggle li.is-active a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-link {
+  background-color: rgb(245, 154, 49);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-link .title {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-link .subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-link .subtitle a:not(.button),
+.hero.is-link .subtitle strong {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero.is-link .navbar-menu {
+    background-color: rgb(245, 154, 49);
+    transition: color 0, background-color 0, border-color 0;
+  }
+}
+
+.hero.is-link .navbar-item,
+.hero.is-link .navbar-link {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-link a.navbar-item:hover,
+.hero.is-link a.navbar-item.is-active,
+.hero.is-link .navbar-link:hover,
+.hero.is-link .navbar-link.is-active {
+  background-color: rgb(244, 142, 25);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-link .tabs a {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-link .tabs.is-boxed a,
+.hero.is-link .tabs.is-toggle a {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-link .tabs.is-boxed li.is-active a,
+.hero.is-link .tabs.is-boxed li.is-active a:hover,
+.hero.is-link .tabs.is-toggle li.is-active a,
+.hero.is-link .tabs.is-toggle li.is-active a:hover {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  color: rgb(245, 154, 49);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-info {
+  background-color: rgb(16, 16, 33);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-info .title {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-info .subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-info .subtitle a:not(.button),
+.hero.is-info .subtitle strong {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero.is-info .navbar-menu {
+    background-color: rgb(16, 16, 33);
+    transition: color 0, background-color 0, border-color 0;
+  }
+}
+
+.hero.is-info .navbar-item,
+.hero.is-info .navbar-link {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-info a.navbar-item:hover,
+.hero.is-info a.navbar-item.is-active,
+.hero.is-info .navbar-link:hover,
+.hero.is-info .navbar-link.is-active {
+  background-color: rgb(8, 8, 16);
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-info .tabs a {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-info .tabs.is-boxed a,
+.hero.is-info .tabs.is-toggle a {
+  color: rgb(255, 255, 255);
+  transition: color 0, background-color 0, border-color 0;
+}
+
+.hero.is-info .tabs.is-boxed li.is-active a,
+.hero.is-info .tabs.is-boxed li.is-active a:hover,
+.hero.is-info .tabs.is-toggle li.is-active a,
+.hero.is-info .tabs.is-toggle li.is-active a:hover {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  color: rgb(16, 16, 33);
+  transition: color 0, background-color 0, border-color 0;
+}

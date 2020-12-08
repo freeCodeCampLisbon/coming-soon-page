@@ -1,0 +1,12 @@
+@import './bulma-generated/generated-fallback.css';
+@import './bulma-generated/generated-bulma-vars.sass';
+
+// override
+@import 'override/main';
+@import './node_modules/bulma-css-vars/bulma-cv-lib';
+
+// mixins
+@import 'mixins/main';
+
+// typography
+@import 'fonts/main';

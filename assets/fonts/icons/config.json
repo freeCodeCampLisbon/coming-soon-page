@@ -1,0 +1,46 @@
+{
+  "name": "fcc",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "77b3693facc3d803417105997b4ffe96",
+      "css": "facebook",
+      "code": 59392,
+      "src": "typicons"
+    },
+    {
+      "uid": "7132e1233bc16cd1b6efe7e29d3613a5",
+      "css": "linkedin",
+      "code": 62232,
+      "src": "entypo"
+    },
+    {
+      "uid": "322a3317bf081dd6a78d5d6a620e1dd5",
+      "css": "meetup",
+      "code": 62176,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0f6a2573a7b6df911ed199bb63717e27",
+      "css": "github",
+      "code": 61595,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "db112402805d9dadc01ce009fbfdb914",
+      "css": "mail",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "4568bba1dba45522fc539c733c9b35e5",
+      "css": "twitter",
+      "code": 59394,
+      "src": "typicons"
+    }
+  ]
+}
