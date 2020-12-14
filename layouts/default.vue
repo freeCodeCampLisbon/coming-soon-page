@@ -20,6 +20,17 @@
               />
             </nuxt-link>
           </div>
+
+          <div class="navbar-menu">
+            <div class="navbar-end">
+              <nuxt-link
+                class="navbar-item has-text-weight-medium is-family-secondary"
+                to="/next-meetup"
+              >
+                Next Meetup
+              </nuxt-link>
+            </div>
+          </div>
         </nav>
       </div>
     </header>

@@ -849,11 +849,6 @@ button.dropdown-item.is-active {
   transition: color 0, background-color 0, border-color 0;
 }
 
-.navbar {
-  background-color: rgb(16, 16, 33);
-  transition: color 0, background-color 0, border-color 0;
-}
-
 .navbar.is-primary {
   background-color: rgb(255, 255, 255);
   color: rgba(0, 0, 0, 0.7);
@@ -1132,13 +1127,6 @@ a.navbar-item.is-active,
 .navbar-link:not(.is-arrowless)::after {
   border-color: rgb(245, 154, 49);
   transition: color 0, background-color 0, border-color 0;
-}
-
-@media screen and (max-width: 1023px) {
-  .navbar-menu {
-    background-color: rgb(16, 16, 33);
-    transition: color 0, background-color 0, border-color 0;
-  }
 }
 
 @media screen and (min-width: 1024px) {

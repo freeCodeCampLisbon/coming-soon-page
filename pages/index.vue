@@ -39,56 +39,59 @@
         <p>It's never too late to learn, and that's our motto!</p>
         <p class="has-text-weight-bold">Signup below for news.</p>
       </div>
-      <div class="block py-6 mb-0">
-        <a
-          class="link icon is-medium mr-4"
-          href="https://www.facebook.com/groups/free.code.camp.lisbon/"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="icon-facebook is-size-4"></i>
-        </a>
-        <a
-          class="link icon is-medium mr-4"
-          href="https://twitter.com/fcclisbon"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="icon-twitter is-size-4"></i>
-        </a>
-        <a
-          class="link icon is-medium mr-4"
-          href="https://www.linkedin.com/company/freecodecamplisbon/"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="icon-linkedin is-size-4"></i>
-        </a>
-        <a
-          class="link icon is-medium mr-4"
-          href="https://github.com/organizations/freeCodeCampLisbon"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="icon-github is-size-4"></i>
-        </a>
-        <a
-          class="link icon is-medium mr-4"
-          href="https://www.meetup.com/pt-BR/freeCodeCamp-Lisbon/"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="icon-meetup is-size-4"></i>
-        </a>
-        <a
-          class="link icon is-medium"
-          href="mailto:info@freecodecamplisbon.org"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="icon-mail is-size-4"></i>
-        </a>
+      <div class="field">
+        <div class="block py-6 mb-0">
+          <a
+            class="link icon is-medium mr-4"
+            href="https://www.facebook.com/groups/free.code.camp.lisbon/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="icon-facebook is-size-3"></i>
+          </a>
+          <a
+            class="link icon is-medium mr-4"
+            href="https://twitter.com/fcclisbon"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="icon-twitter is-size-3"></i>
+          </a>
+          <a
+            class="link icon is-medium mr-4"
+            href="https://www.linkedin.com/company/freecodecamplisbon/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="icon-linkedin is-size-3"></i>
+          </a>
+          <a
+            class="link icon is-medium mr-4"
+            href="https://github.com/organizations/freeCodeCampLisbon"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="icon-github is-size-3"></i>
+          </a>
+          <a
+            class="link icon is-medium mr-4"
+            href="https://www.meetup.com/pt-BR/freeCodeCamp-Lisbon/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="icon-meetup is-size-3"></i>
+          </a>
+          <a
+            class="link icon is-medium"
+            href="mailto:info@freecodecamplisbon.org"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="icon-mail is-size-3"></i>
+          </a>
+        </div>
       </div>
+
       <ValidationObserver
         ref="observer"
         v-slot="{ handleSubmit }"
@@ -108,7 +111,7 @@
         />
         <p class="control">
           <b-button type="is-link" @click="handleSubmit(submit)"
-            >Search</b-button
+            >Submit</b-button
           >
         </p>
       </ValidationObserver>

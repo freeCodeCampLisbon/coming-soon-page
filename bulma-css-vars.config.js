@@ -5,7 +5,6 @@ const appColors = {
 }
 
 appColors['body-background-color'] = appColors.info
-appColors['navbar-background-color'] = appColors.info
 appColors.text = appColors.primary
 
 module.exports = {
