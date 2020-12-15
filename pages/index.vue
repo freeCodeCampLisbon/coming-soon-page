@@ -151,7 +151,7 @@ export default {
       try {
         this.loading = true
         await this.$axios.$post(
-          'http://localhost:8888/.netlify/functions/newsletter',
+          '.netlify/functions/newsletter',
           JSON.stringify({
             name: this.name,
             email: this.email,
