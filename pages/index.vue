@@ -99,18 +99,26 @@
       >
         <input-with-validation
           v-model="name"
+          vid="name"
           rules="required"
           placeholder="Name"
           class="mr-5"
+          :readonly="loading"
         />
         <input-with-validation
           v-model="email"
+          vid="email"
           rules="required|email"
           placeholder="Email"
           class="mr-5"
+          :readonly="loading"
         />
         <p class="control">
-          <b-button type="is-link" @click="handleSubmit(submit)"
+          <b-button
+            type="is-link"
+            :class="{ 'is-loading': loading }"
+            :disabled="loading"
+            @click="handleSubmit(submit)"
             >Submit</b-button
           >
         </p>
@@ -136,10 +144,40 @@ export default {
     labelPosition: 'inside',
     name: '',
     email: '',
+    loading: false,
   }),
   methods: {
-    submit() {
-      console.log('Form submitted :D')
+    async submit() {
+      try {
+        this.loading = true
+        await this.$axios.$post(
+          '.netlify/functions/newsletter',
+          JSON.stringify({
+            name: this.name,
+            email: this.email,
+          })
+        )
+
+        const notif = this.$buefy.notification.open({
+          duration: 5000,
+          message: 'Subscribed ✔️',
+          position: 'is-top',
+          type: 'is-success',
+          closable: false,
+        })
+
+        notif.$on('close', () => {
+          this.email = ''
+          this.name = ''
+          this.$refs.observer.reset()
+          this.loading = false
+        })
+      } catch (e) {
+        this.loading = false
+        if (e.response.data.errors) {
+          this.$refs.observer.setErrors(e.response.data.errors)
+        }
+      }
     },
   },
 }
