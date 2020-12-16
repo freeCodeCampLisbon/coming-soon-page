@@ -35,8 +35,8 @@ export default {
       },
       {
         question: 'What will I learn?',
-        answer: `You'll learn everything from basic to advaced
-                ${['css', 'js', 'html', 'vue', 'react']
+        answer: `You'll have the opportunity to focus on your own study plan. Also, we try to provide workshops on a large variety of topics, such as
+                ${['html', 'css', 'js', 'react', 'vue']
                   .map(
                     (tag) => `<span
 
@@ -45,8 +45,8 @@ export default {
                   #${tag}
                 </span>`
                   )
-                  .join('')}<br>
-                  We are also open to content produced by our campers, so you might walk into a blockchain workshop or anything else that we might feel interesting.
+                  .join('')}.<br>
+                  Staying in touch with different levels of developers is a good way to improve your skills.
               `,
       },
       {
@@ -78,8 +78,8 @@ export default {
           <li>Streaming material</li>
         </ul>
         Or simply help us buy a coffee! Developers <span class="has-text-danger">❤️</span> coffee! <br />
-         <a class="is-inline-block has-background-link has-text-white p-3 mt-5 is-family-secondary has-text-weight-medium btn-coffee" target="_blank" href="https://www.buymeacoffee.com/fccLisbon">
-          <img class="pr-3" src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee" style="vertical-align:middle">Buy me a BICA
+         <a class="is-inline-block has-background-link has-text-white p-3 mt-5 is-family-secondary has-text-weight-medium btn-coffee is-size-6" target="_blank" href="https://www.buymeacoffee.com/fccLisbon">
+          ☕ Buy me a BICA
          </a>
         `,
       },
@@ -91,9 +91,18 @@ export default {
 <style lang="scss">
 a.btn-coffee {
   border-radius: 5px;
+  border: 4px solid transparent;
+  transform: scale(1);
+  transition: all 0.3s;
   &:hover,
   &:focus {
-    color: white !important;
+    color: #f59a31 !important;
+    background: #101021 !important;
+    border: 4px solid #f59a31;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 </style>

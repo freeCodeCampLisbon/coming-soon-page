@@ -48,21 +48,14 @@
                 class="navbar-item has-text-weight-medium is-family-secondary mx-4"
                 to="/faq"
               >
-                FAQ
+                FAQS
               </nuxt-link>
               <a
-                class="navbar-item has-background-link has-text-white is-family-secondary has-text-weight-medium btn-coffee mx-4 py-0"
+                class="navbar-item has-background-link has-text-white is-family-secondary has-text-weight-medium btn-coffee mx-4"
                 target="_blank"
                 href="https://www.buymeacoffee.com/fccLisbon"
               >
-                <img
-                  width="40px"
-                  height="40px"
-                  class="pr-3"
-                  src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
-                  alt="Buy me a coffee"
-                  style="vertical-align: middle"
-                />Buy me a BICA
+                ☕ Buy me a BICA
               </a>
             </div>
           </div>
@@ -100,8 +93,11 @@
 </template>
 
 <script>
+import ogImage from '@/static/img/seo.png'
+
 export default {
   data: () => ({
+    ogImage,
     isActive: false,
     socialLinks: [
       {
@@ -134,6 +130,22 @@ export default {
     clickHamburger() {
       this.isActive = !this.isActive
     },
+  },
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: process.env.API_URL + this.ogImage,
+        },
+        {
+          hid: 'og:image:secure_url',
+          property: 'og:image:secure_url',
+          content: process.env.API_URL + this.ogImage,
+        },
+      ],
+    }
   },
 }
 </script>
