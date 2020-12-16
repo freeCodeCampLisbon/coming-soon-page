@@ -39,89 +39,41 @@
         <p>It's never too late to learn, and that's our motto!</p>
         <p class="has-text-weight-bold">Signup below for news.</p>
       </div>
-      <div class="field">
-        <div class="block py-6 mb-0">
-          <a
-            class="link icon is-medium mr-4"
-            href="https://www.facebook.com/groups/free.code.camp.lisbon/"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="icon-facebook is-size-3"></i>
-          </a>
-          <a
-            class="link icon is-medium mr-4"
-            href="https://twitter.com/fcclisbon"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="icon-twitter is-size-3"></i>
-          </a>
-          <a
-            class="link icon is-medium mr-4"
-            href="https://www.linkedin.com/company/freecodecamplisbon/"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="icon-linkedin is-size-3"></i>
-          </a>
-          <a
-            class="link icon is-medium mr-4"
-            href="https://github.com/organizations/freeCodeCampLisbon"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="icon-github is-size-3"></i>
-          </a>
-          <a
-            class="link icon is-medium mr-4"
-            href="https://www.meetup.com/pt-BR/freeCodeCamp-Lisbon/"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="icon-meetup is-size-3"></i>
-          </a>
-          <a
-            class="link icon is-medium"
-            href="mailto:info@freecodecamplisbon.org"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="icon-mail is-size-3"></i>
-          </a>
-        </div>
-      </div>
-
       <ValidationObserver
-        ref="observer"
         v-slot="{ handleSubmit }"
-        class="field is-grouped"
+        ref="observer"
+        tag="div"
+        class="columns mt-6"
       >
-        <input-with-validation
-          v-model="name"
-          vid="name"
-          rules="required"
-          placeholder="Name"
-          class="mr-5"
-          :readonly="loading"
-        />
-        <input-with-validation
-          v-model="email"
-          vid="email"
-          rules="required|email"
-          placeholder="Email"
-          class="mr-5"
-          :readonly="loading"
-        />
-        <p class="control">
-          <b-button
-            type="is-link"
-            :class="{ 'is-loading': loading }"
-            :disabled="loading"
-            @click="handleSubmit(submit)"
-            >Submit</b-button
-          >
-        </p>
+        <div class="column is-2">
+          <input-with-validation
+            v-model="name"
+            vid="name"
+            rules="required"
+            placeholder="Name"
+            :readonly="loading"
+          />
+        </div>
+        <div class="column is-2">
+          <input-with-validation
+            v-model="email"
+            vid="email"
+            rules="required|email"
+            placeholder="Email"
+            :readonly="loading"
+          />
+        </div>
+        <div class="column is-2">
+          <p class="control">
+            <b-button
+              type="is-link"
+              :class="{ 'is-loading': loading }"
+              :disabled="loading"
+              @click="handleSubmit(submit)"
+              >Submit</b-button
+            >
+          </p>
+        </div>
       </ValidationObserver>
     </div>
   </div>

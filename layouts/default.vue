@@ -12,23 +12,58 @@
               <img
                 src="~/assets/img/freecodecamp_white_horizontal_orange.svg"
                 srcset="
-                  ~/assets/img/freecodecamp_dark_horizontal_orange@2x.png 2x,
-                  ~/assets/img/freecodecamp_dark_horizontal_orange@3x.png 3x,
-                  ~/assets/img/freecodecamp_dark_horizontal_orange@4x.png 4x
+                  ~/assets/img/freecodecamp_white_horizontal_orange@2x.png 2x,
+                  ~/assets/img/freecodecamp_white_horizontal_orange@3x.png 3x,
+                  ~/assets/img/freecodecamp_white_horizontal_orange@4x.png 4x
                 "
                 alt="freeCodeCamp Lisbon"
               />
             </nuxt-link>
+
+            <button
+              role="button"
+              class="navbar-burger has-background-info"
+              style="border: 0"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+              :class="{ 'is-active': isActive }"
+              @click="clickHamburger"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </button>
           </div>
 
-          <div class="navbar-menu">
+          <div class="navbar-menu" :class="{ 'is-active': isActive }">
             <div class="navbar-end">
               <nuxt-link
-                class="navbar-item has-text-weight-medium is-family-secondary"
+                class="navbar-item has-text-weight-medium is-family-secondary mx-4"
                 to="/next-meetup"
               >
                 Next Meetup
               </nuxt-link>
+              <nuxt-link
+                class="navbar-item has-text-weight-medium is-family-secondary mx-4"
+                to="/faq"
+              >
+                FAQ
+              </nuxt-link>
+              <a
+                class="navbar-item has-background-link has-text-white is-family-secondary has-text-weight-medium btn-coffee mx-4 py-0"
+                target="_blank"
+                href="https://www.buymeacoffee.com/fccLisbon"
+              >
+                <img
+                  width="40px"
+                  height="40px"
+                  class="pr-3"
+                  src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
+                  alt="Buy me a coffee"
+                  style="vertical-align: middle"
+                />Buy me a BICA
+              </a>
             </div>
           </div>
         </nav>
@@ -42,6 +77,18 @@
     </div>
 
     <footer class="footer has-background-info">
+      <div class="block pb-3 mb-0 has-text-centered">
+        <a
+          v-for="social in socialLinks"
+          :key="social.icon"
+          class="button is-info link icon mr-4 has-text-white is-medium"
+          :href="social.link"
+          target="_blank"
+          rel="noopener"
+        >
+          <i :class="`icon-${social.icon} is-size-5`"></i>
+        </a>
+      </div>
       <div class="content has-text-centered">
         <p>
           made with ❤️ by
@@ -51,6 +98,45 @@
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    isActive: false,
+    socialLinks: [
+      {
+        icon: 'facebook',
+        link: 'https://www.facebook.com/groups/free.code.camp.lisbon/',
+      },
+      {
+        icon: 'twitter',
+        link: 'https://twitter.com/fcclisbon',
+      },
+      {
+        icon: 'linkedin',
+        link: 'https://www.linkedin.com/company/freecodecamplisbon/',
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/organizations/freeCodeCampLisbon',
+      },
+      {
+        icon: 'meetup',
+        link: 'https://www.meetup.com/pt-BR/freeCodeCamp-Lisbon/',
+      },
+      {
+        icon: 'mail',
+        link: 'mailto:info@freecodecamplisbon.org',
+      },
+    ],
+  }),
+  methods: {
+    clickHamburger() {
+      this.isActive = !this.isActive
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .navbar-item img {

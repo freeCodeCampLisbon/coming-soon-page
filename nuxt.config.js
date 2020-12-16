@@ -49,7 +49,7 @@ export default {
   css: ['@/assets/styles/main.scss', '@/assets/fonts/icons/fcc.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['~/plugins/vee-validate.js', '~/plugins/gtag.js'],
+  plugins: ['~/plugins/vee-validate.js'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -69,7 +69,17 @@ export default {
     'nuxt-buefy',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/google-gtag',
   ],
+
+  'google-gtag': {
+    id: process.env.G_TAG,
+    config: {
+      anonymize_ip: true, // anonymize IP
+      send_page_view: false, // might be necessary to avoid duplicated page track on page reload
+    },
+    debug: process.env.NODE_ENV !== 'production', // enable to track in dev mode
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
