@@ -8,7 +8,7 @@
           aria-label="main navigation"
         >
           <div class="navbar-brand">
-            <nuxt-link to="/" class="navbar-item">
+            <nuxt-link to="/" class="navbar-item pl-0">
               <img
                 src="~/assets/img/freecodecamp_white_horizontal_orange.svg"
                 srcset="

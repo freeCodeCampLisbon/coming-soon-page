@@ -90,12 +90,6 @@
               <p>
                 {{ nextEvent.description }}
               </p>
-              <div class="buttons is-right">
-                <a
-                  class="button is-link is-inverted is-outlined has-text-weight-medium is-family-secondary"
-                  >Read More →</a
-                >
-              </div>
             </div>
           </div>
         </div>
