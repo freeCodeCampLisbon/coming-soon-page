@@ -37,6 +37,11 @@ export default (meta) => {
       content: (meta && meta.img) || global.img,
     },
     {
+      hid: 'og:image:secure_url',
+      property: 'og:image:secure_url',
+      content: (meta && meta.img) || global.img,
+    },
+    {
       hid: 'twitter:url',
       name: 'twitter:url',
       content: (meta && meta.url) || global.siteUrl,

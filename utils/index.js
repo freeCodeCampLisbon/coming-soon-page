@@ -8,6 +8,6 @@ export default {
   siteTitle: 'freeCodeCamp Lisbon - coming soon',
   siteDesc:
     'freeCodeCamp Lisbon is an open source community that helps you learn to code.',
-  img: '/_nuxt/assets/img/seo.png',
+  img: 'https://www.freecodecamplisbon.org/_nuxt/img/seo.png',
   siteType: 'website',
 }
