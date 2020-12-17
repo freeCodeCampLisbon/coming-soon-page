@@ -40,6 +40,12 @@
             <div class="navbar-end">
               <nuxt-link
                 class="navbar-item has-text-weight-medium is-family-secondary mx-4"
+                to="/"
+              >
+                Home
+              </nuxt-link>
+              <nuxt-link
+                class="navbar-item has-text-weight-medium is-family-secondary mx-4"
                 to="/next-meetup"
               >
                 Next Meetup
