@@ -10,11 +10,11 @@
           <div class="navbar-brand">
             <nuxt-link to="/" class="navbar-item pl-0">
               <img
-                src="~/assets/img/freecodecamp_white_horizontal_orange.svg"
+                src="/img/freecodecamp_white_horizontal_orange.svg"
                 srcset="
-                  ~/assets/img/freecodecamp_white_horizontal_orange@2x.png 2x,
-                  ~/assets/img/freecodecamp_white_horizontal_orange@3x.png 3x,
-                  ~/assets/img/freecodecamp_white_horizontal_orange@4x.png 4x
+                  /img/freecodecamp_white_horizontal_orange@2x.png 2x,
+                  /img/freecodecamp_white_horizontal_orange@3x.png 3x,
+                  /img/freecodecamp_white_horizontal_orange@4x.png 4x
                 "
                 alt="freeCodeCamp Lisbon"
               />
@@ -99,11 +99,8 @@
 </template>
 
 <script>
-import ogImage from '@/static/img/seo.png'
-
 export default {
   data: () => ({
-    ogImage,
     isActive: false,
     socialLinks: [
       {
@@ -136,22 +133,6 @@ export default {
     clickHamburger() {
       this.isActive = !this.isActive
     },
-  },
-  head() {
-    return {
-      meta: [
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: process.env.API_URL + this.ogImage,
-        },
-        {
-          hid: 'og:image:secure_url',
-          property: 'og:image:secure_url',
-          content: process.env.API_URL + this.ogImage,
-        },
-      ],
-    }
   },
 }
 </script>

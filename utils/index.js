@@ -1,5 +1,5 @@
 export default {
-  siteUrl: 'https://freecodecamplisbon.org',
+  siteUrl: process.env.CLIENT_URL,
   siteName: 'freeCodeCamp Lisbon - dev events based on Lisbon',
   author: 'freeCodeCamp Lisbon',
   twitterHandle: '@fccLisbon',
@@ -8,6 +8,6 @@ export default {
   siteTitle: 'freeCodeCamp Lisbon - coming soon',
   siteDesc:
     'freeCodeCamp Lisbon is an open source community that helps you learn to code.',
-  img: 'https://www.freecodecamplisbon.org/_nuxt/img/seo.png',
+  img: process.env.CLIENT_URL + '/seo.png',
   siteType: 'website',
 }
