@@ -81,6 +81,7 @@ export default {
     debug: process.env.NODE_ENV !== 'production', // enable to track in dev mode
   },
 
+  pageTransition: 'page',
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
     baseURL: process.env.API_URL || '',

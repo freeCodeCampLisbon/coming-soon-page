@@ -1,11 +1,11 @@
 <template>
-  <div class="container px-5">
+  <div class="container">
     <h1 class="is-size-1 is-family-secondary has-text-white mb-6">FAQS 🤔</h1>
     <div class="content">
-      <ol class="block is-size-5 is-family-primary mb-0">
+      <ol class="block is-family-primary mb-0">
         <li v-for="({ question, answer }, i) in faq" :key="i" class="mb-6">
-          <h5 class="title has-text-link">{{ question }}</h5>
-          <p class="is-size-5 mt-2 is-family-primary" v-html="answer" />
+          <h5 class="title is-size-5 has-text-link">{{ question }}</h5>
+          <p class="mt-2 is-family-primary" v-html="answer" />
         </li>
       </ol>
     </div>
@@ -16,7 +16,7 @@ export default {
   data: () => ({
     faq: [
       {
-        question: 'Is is it a course?',
+        question: 'Is it a course?',
         answer:
           "No at all. We're just a study group trying to make a difference in the community by contributing our time and knowledge.",
       },

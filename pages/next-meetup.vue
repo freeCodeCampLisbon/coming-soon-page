@@ -1,61 +1,68 @@
 <template>
-  <div class="container px-5">
-    <h1 class="is-size-1 is-family-secondary has-text-white">Next Meetup 🤓</h1>
-    <div v-if="nextEvent && events.length > 0" class="first-event">
-      <div class="columns">
-        <div class="column is-8 is-offset-2">
-          <figure class="is-16by9">
-            <img src="/img/seo.png" />
-          </figure>
-        </div>
-      </div>
-      <section class="section">
-        <div class="columns">
-          <div class="column is-8 is-offset-2">
-            <div class="content is-medium">
-              <div class="tags">
-                <span
-                  v-for="(category, idx) in nextEvent.category"
-                  :key="idx"
-                  class="tag is-link"
-                >
-                  #{{ category }}
-                </span>
-              </div>
-              <time class="is-block subtitle is-5">{{ nextEvent.date }}</time>
-              <p class="subtitle is-5 is-spaced">{{ nextEvent.place }}</p>
-              <p class="is-block title is-1 is-family-secondary has-text-link">
-                {{ nextEvent.title }}
-              </p>
-              <p class="subtitle is-5 has-text-link">
-                By
-                <a
-                  class="has-text-weight-bold link"
-                  :href="nextEvent.user.path"
-                  target="_blank"
-                  rel="noopener"
-                  >{{ nextEvent.user.name }}</a
-                >
-              </p>
-              <p>
-                {{ nextEvent.description }}
-              </p>
+  <div class="hero is-large">
+    <div class="hero-body">
+      <div v-if="nextEvent && events.length > 0" class="container px-5">
+        <h1 class="is-size-1 is-family-secondary has-text-white">
+          Next Meetup 🤓
+        </h1>
+        <div class="first-event">
+          <div class="columns">
+            <div class="column is-8 is-offset-2">
+              <figure class="is-16by9">
+                <img src="/img/seo.png" />
+              </figure>
             </div>
           </div>
+          <section class="section">
+            <div class="columns">
+              <div class="column is-8 is-offset-2">
+                <div class="content is-medium">
+                  <div class="tags">
+                    <span
+                      v-for="(category, idx) in nextEvent.category"
+                      :key="idx"
+                      class="tag is-link"
+                    >
+                      #{{ category }}
+                    </span>
+                  </div>
+                  <time class="is-block subtitle is-5">{{
+                    nextEvent.date
+                  }}</time>
+                  <p class="subtitle is-5 is-spaced">{{ nextEvent.place }}</p>
+                  <p
+                    class="is-block title is-1 is-family-secondary has-text-link"
+                  >
+                    {{ nextEvent.title }}
+                  </p>
+                  <p class="subtitle is-5 has-text-link">
+                    By
+                    <a
+                      class="has-text-weight-bold link"
+                      :href="nextEvent.user.path"
+                      target="_blank"
+                      rel="noopener"
+                      >{{ nextEvent.user.name }}</a
+                    >
+                  </p>
+                  <p>
+                    {{ nextEvent.description }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-    </div>
-    <div v-else class="hero is-large">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title has-text-white">
-            There's currently no meetups in the pipeline 💻
-          </h1>
-        </div>
+
+        <!--    <hr class="has-background-grey-darker" />
+    <div class="content"></div> -->
+      </div>
+      <div v-else class="container px-5 has-text-centered">
+        <h1 class="title has-text-white">
+          There's currently no meetups in the pipeline 💻
+        </h1>
       </div>
     </div>
-    <!--    <hr class="has-background-grey-darker" />
-    <div class="content"></div> -->
   </div>
 </template>
 

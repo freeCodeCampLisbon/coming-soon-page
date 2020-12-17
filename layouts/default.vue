@@ -63,14 +63,14 @@
       </div>
     </header>
 
-    <div class="main section pt-1">
+    <div class="main section">
       <div class="content">
         <nuxt />
       </div>
     </div>
 
     <footer class="footer has-background-info">
-      <div class="block pb-3 mb-0 has-text-centered">
+      <div class="block mb-0 has-text-centered">
         <a
           v-for="social in socialLinks"
           :key="social.icon"
