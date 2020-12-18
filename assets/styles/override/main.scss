@@ -1,7 +1,11 @@
 // overrides
 
-$family-primary: 'SourceCodePro';
-$family-secondary: 'Poppins';
+$family-primary: 'SourceCodePro', blinkmacsystemfont, -apple-system, 'Segoe UI',
+  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$family-secondary: 'Poppins', blinkmacsystemfont, -apple-system, 'Segoe UI',
+  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 $navbar-background-color: transparent;
 

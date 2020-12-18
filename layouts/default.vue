@@ -88,9 +88,16 @@
           <i :class="`icon-${social.icon} is-size-5`"></i>
         </a>
       </div>
+      <div class="is-block has-text-centered my-2">
+        <nuxt-link class="is-size-6" to="/faq">FAQS</nuxt-link>
+        <span class="has-text-white">-</span>
+        <nuxt-link class="is-size-6" to="/privacy-policy"
+          >Privacy Policy</nuxt-link
+        >
+      </div>
       <div class="content has-text-centered">
         <p>
-          made with ❤️ by
+          Made with <span class="has-text-danger">❤️</span> by
           <a href="http://freecodecamplisbon.org">freeCodeCamp Lisbon</a>
         </p>
       </div>

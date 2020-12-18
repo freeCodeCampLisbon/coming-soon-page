@@ -70,6 +70,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/google-gtag',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
   ],
 
   'google-gtag': {
@@ -82,6 +84,24 @@ export default {
   },
 
   pageTransition: 'page',
+
+  generate: {
+    fallback: '404.html',
+  },
+
+  sitemap: {
+    hostname: process.env.CLIENT_URL,
+    gzip: true,
+  },
+
+  robots: [
+    {
+      Disallow: '/_nuxt',
+    },
+    {
+      sitemap: '/sitemap.xml',
+    },
+  ],
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
     baseURL: process.env.API_URL || '',
