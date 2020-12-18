@@ -104,7 +104,7 @@ export default {
 
   robots: [
     {
-      Disallow: process.env.CLIENT_URL + '/_nuxt',
+      Disallow: '/_nuxt/',
     },
     {
       sitemap: process.env.CLIENT_URL + '/sitemap.xml',

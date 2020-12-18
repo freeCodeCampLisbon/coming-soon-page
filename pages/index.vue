@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="hero is-medium">
+    <div class="hero">
       <div class="hero-body">
         <h1
           class="title is-family-secondary has-text-white is-size-2 has-text-centered mb-6"

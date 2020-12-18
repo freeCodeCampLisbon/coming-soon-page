@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <div class="hero-body">
-      <div v-if="document" class="container px-5">
+      <div v-if="document" class="container">
         <h1 class="is-size-1 is-family-secondary has-text-white">
           Next Meetup 🤓
         </h1>
@@ -91,9 +91,9 @@
                   </a>
                 </div>
                 <!-- <button
-                  
+
                 >
-                 
+
                 </button> -->
               </div>
             </div>
