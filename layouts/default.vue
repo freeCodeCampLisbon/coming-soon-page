@@ -59,8 +59,7 @@
               <a
                 class="navbar-item has-background-link has-text-white is-family-secondary has-text-weight-medium btn-coffee mx-4"
                 target="_blank"
-                rel="noopener"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 href="https://www.buymeacoffee.com/fccLisbon"
               >
                 ☕ Buy me a BICA

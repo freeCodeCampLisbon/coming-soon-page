@@ -38,7 +38,7 @@
             tag="div"
             class="columns mt-6"
           >
-            <div class="column is-2">
+            <div class="column is-4">
               <input-with-validation
                 v-model="name"
                 vid="name"
@@ -47,7 +47,7 @@
                 :readonly="loading"
               />
             </div>
-            <div class="column is-2">
+            <div class="column is-4">
               <input-with-validation
                 v-model="email"
                 vid="email"
@@ -56,16 +56,15 @@
                 :readonly="loading"
               />
             </div>
-            <div class="column is-2">
-              <p class="control">
-                <b-button
-                  type="is-link"
-                  :class="{ 'is-loading': loading }"
-                  :disabled="loading"
-                  @click="handleSubmit(submit)"
-                  >Submit</b-button
-                >
-              </p>
+            <div class="column is-4 is-2-desktop">
+              <b-button
+                type="is-link"
+                class="is-fullwidth"
+                :class="{ 'is-loading': loading }"
+                :disabled="loading"
+                @click="handleSubmit(submit)"
+                >Submit</b-button
+              >
             </div>
           </ValidationObserver>
         </div>

@@ -61,6 +61,7 @@ export default {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     '@nuxtjs/dotenv',
+    'nuxt-purgecss',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -83,6 +84,8 @@ export default {
     debug: process.env.NODE_ENV !== 'production', // enable to track in dev mode
   },
 
+  modern: true,
+
   pageTransition: 'page',
 
   generate: {
@@ -102,6 +105,10 @@ export default {
       sitemap: process.env.CLIENT_URL + '/sitemap.xml',
     },
   ],
+
+  purgeCSS: {
+    whitelistPatterns: [/^icon-/],
+  },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
     baseURL: process.env.API_URL || '',
