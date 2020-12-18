@@ -10,7 +10,8 @@
       :type="{ 'is-danger': errors[0], 'is-success': valid }"
       :message="errors"
     >
-      <b-input v-model="innerValue" v-bind="$attrs"></b-input>
+      <label :for="vid" class="is-sr-only" v-text="label"></label>
+      <b-input :id="vid" v-model="innerValue" v-bind="$attrs"></b-input>
     </b-field>
   </ValidationProvider>
 </template>
@@ -26,6 +27,11 @@ export default {
     vid: {
       type: String,
       default: '',
+      required: true,
+    },
+    label: {
+      type: String,
+      required: true,
     },
     rules: {
       type: [Object, String],

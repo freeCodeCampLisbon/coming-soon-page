@@ -81,6 +81,7 @@
         <a
           v-for="social in socialLinks"
           :key="social.icon"
+          :aria-label="social.icon"
           class="button is-info link icon mr-4 has-text-white is-medium"
           :href="social.link"
           target="_blank"

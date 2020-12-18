@@ -42,6 +42,7 @@
               <input-with-validation
                 v-model="name"
                 vid="name"
+                label="Your name"
                 rules="required"
                 placeholder="Name"
                 :readonly="loading"
@@ -51,6 +52,7 @@
               <input-with-validation
                 v-model="email"
                 vid="email"
+                label="Your email"
                 rules="required|email"
                 placeholder="Email"
                 :readonly="loading"
@@ -59,7 +61,7 @@
             <div class="column is-4 is-2-desktop">
               <b-button
                 type="is-link"
-                class="is-fullwidth"
+                class="is-fullwidth submit"
                 :class="{ 'is-loading': loading }"
                 :disabled="loading"
                 @click="handleSubmit(submit)"
@@ -126,5 +128,8 @@ export default {
 <style scoped lang="scss">
 .has-underline {
   text-decoration: underline;
+}
+.submit {
+  color: hsl(0deg 0% 14%);
 }
 </style>
