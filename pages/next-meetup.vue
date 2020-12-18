@@ -1,110 +1,110 @@
 <template>
   <div class="hero">
     <div class="hero-body">
-      <div v-if="document" class="container">
-        <h1 class="is-size-1 is-family-secondary has-text-white">
-          Next Meetup 🤓
-        </h1>
-        <div class="first-event">
-          <div class="columns">
-            <div class="column is-8 is-offset-2">
-              <figure class="is-16by9">
-                <prismic-image :field="document.data.event_image" />
-              </figure>
-            </div>
-          </div>
-          <section class="section">
+      <div class="container">
+        <div v-if="document" class="content is-small">
+          <h1 class="is-size-1 is-family-secondary has-text-white">
+            Next Meetup 🤓
+          </h1>
+          <div class="first-event">
             <div class="columns">
               <div class="column is-8 is-offset-2">
-                <div class="content is-medium">
-                  <div class="tags">
-                    <span
-                      v-for="(category, idx) in document.data.tech.split(',')"
-                      :key="idx"
-                      class="tag is-link"
-                    >
-                      #{{ category }}
-                    </span>
-                  </div>
-                  <p class="is-block subtitle is-5">
-                    <span class="mr-2">📅</span>{{ parsedDate.date
-                    }}<span class="ml-5 mr-2">⏰</span>{{ parsedDate.time }}
-                    <a
-                      class="ml-2"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      :href="$prismic.asLink(document.data.location)"
-                    >
-                      <span class="mr-2">📍</span
-                      >{{ document.data.location_name }}
-                    </a>
-                  </p>
-                  <p
-                    class="is-block title mt-6 is-1 is-family-secondary has-text-link"
-                  >
-                    {{ $prismic.asText(document.data.title) }}
-                  </p>
-                  <p class="subtitle is-5 has-text-link">
-                    By
-                    <prismic-link
-                      class="has-text-weight-bold link"
-                      target="_blank"
-                      rel="noopener"
-                      :field="document.data.speaker_url"
-                      >{{
-                        $prismic.asText(document.data.speaker)
-                      }}</prismic-link
-                    >
-                  </p>
-                  <p>
-                    {{ $prismic.asText(document.data.description) }}
-                  </p>
-                  <div class="my-6">
-                    <h2 class="title is-3 has-text-link">
-                      <span class="mr-2">💭</span>Some important things to keep
-                      in mind
-                    </h2>
-                    <div
-                      v-if="$prismic.asText(document.data.requirements)"
-                      class="content"
-                      v-html="$prismic.asHtml(document.data.requirements)"
-                    />
-                    <p v-else>
-                      Nothing important to remember, enjoy the meetup
-                    </p>
-                  </div>
-                  <div class="my-6">
-                    <h2 class="title is-3 has-text-link">
-                      <span class="mr-2">🔗</span>Some links you may find useful
-                    </h2>
-                    <div v-html="$prismic.asHtml(document.data.useful_links)" />
-                  </div>
-                </div>
-                <div class="is-flex is-justify-content-center mt-6">
-                  <a
-                    :href="$prismic.asLink(document.data.meetup_link)"
-                    class="button has-background-link p-5 is-family-secondary has-text-weight-medium has-text-white button-link btn-coffee"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Reserve your seat now
-                  </a>
-                </div>
-                <!-- <button
-
-                >
-
-                </button> -->
+                <figure class="is-16by9">
+                  <prismic-image :field="document.data.event_image" />
+                </figure>
               </div>
             </div>
-          </section>
+            <section class="section">
+              <div class="columns">
+                <div class="column is-8 is-offset-2">
+                  <div class="content is-medium">
+                    <div class="tags">
+                      <span
+                        v-for="(category, idx) in document.data.tech.split(',')"
+                        :key="idx"
+                        class="tag is-link"
+                      >
+                        #{{ category }}
+                      </span>
+                    </div>
+                    <p class="is-block subtitle is-5">
+                      <span class="mr-2">📅</span>{{ parsedDate.date
+                      }}<span class="ml-5 mr-2">⏰</span>{{ parsedDate.time }}
+                      <a
+                        class="ml-2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        :href="$prismic.asLink(document.data.location)"
+                      >
+                        <span class="mr-2">📍</span
+                        >{{ document.data.location_name }}
+                      </a>
+                    </p>
+                    <p
+                      class="is-block title mt-6 is-1 is-family-secondary has-text-link"
+                    >
+                      {{ $prismic.asText(document.data.title) }}
+                    </p>
+                    <p class="subtitle is-5 has-text-link">
+                      By
+                      <prismic-link
+                        class="has-text-weight-bold link"
+                        target="_blank"
+                        rel="noopener"
+                        :field="document.data.speaker_url"
+                        >{{
+                          $prismic.asText(document.data.speaker)
+                        }}</prismic-link
+                      >
+                    </p>
+                    <p>
+                      {{ $prismic.asText(document.data.description) }}
+                    </p>
+                    <div class="my-6">
+                      <h2 class="title is-3 has-text-link">
+                        <span class="mr-2">💭</span>Some important things to
+                        keep in mind
+                      </h2>
+                      <div
+                        v-if="$prismic.asText(document.data.requirements)"
+                        class="content"
+                        v-html="$prismic.asHtml(document.data.requirements)"
+                      />
+                      <p v-else>
+                        Nothing important to remember, enjoy the meetup
+                      </p>
+                    </div>
+                    <div class="my-6">
+                      <h2 class="title is-3 has-text-link">
+                        <span class="mr-2">🔗</span>Some links you may find
+                        useful
+                      </h2>
+                      <div
+                        v-html="$prismic.asHtml(document.data.useful_links)"
+                      />
+                    </div>
+                  </div>
+                  <div class="is-flex is-justify-content-center mt-6">
+                    <a
+                      :href="$prismic.asLink(document.data.meetup_link)"
+                      class="button has-background-link p-5 is-family-secondary has-text-weight-medium has-text-white button-link btn-coffee"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Reserve your seat now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-      </div>
 
-      <div v-else class="container px-5 has-text-centered">
-        <h1 class="title has-text-white">
-          There's currently no meetups in the pipeline 💻
-        </h1>
+        <div v-else class="container px-5 has-text-centered">
+          <h1 class="title has-text-white">
+            There's currently no meetups in the pipeline 💻
+          </h1>
+        </div>
       </div>
     </div>
   </div>
@@ -143,28 +143,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-.box {
-  &:hover {
-    background-color: #f59a31 !important;
-
-    .tag.is-link {
-      background-color: #101021 !important;
-    }
-
-    .has-text-link,
-    .link {
-      color: #101021 !important;
-    }
-
-    .link {
-      text-decoration: underline;
-    }
-  }
-}
-
-.image.is-512x512 {
-  width: 512px;
-}
-</style>

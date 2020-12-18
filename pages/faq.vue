@@ -1,13 +1,19 @@
 <template>
-  <div class="container">
-    <h1 class="is-size-1 is-family-secondary has-text-white mb-6">FAQS 🤔</h1>
-    <div class="content">
-      <ol class="block is-family-primary mb-0">
-        <li v-for="({ question, answer }, i) in faq" :key="i" class="mb-6">
-          <h5 class="title is-size-5 has-text-link">{{ question }}</h5>
-          <p class="mt-2 is-family-primary" v-html="answer" />
-        </li>
-      </ol>
+  <div class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="is-size-1 is-family-secondary has-text-white mb-6">
+          FAQS 🤔
+        </h1>
+        <div class="content">
+          <ol class="block is-family-primary mb-0">
+            <li v-for="({ question, answer }, i) in faq" :key="i" class="mb-6">
+              <h5 class="title is-size-5 has-text-link">{{ question }}</h5>
+              <p class="mt-2 is-family-primary" v-html="answer" />
+            </li>
+          </ol>
+        </div>
+      </div>
     </div>
   </div>
 </template>
