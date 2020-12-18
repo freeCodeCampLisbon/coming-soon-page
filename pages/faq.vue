@@ -18,7 +18,7 @@ export default {
       {
         question: 'Is it a course?',
         answer:
-          "No at all. We're just a study group trying to make a difference in the community by contributing our time and knowledge.",
+          "Not at all. We're just a study group trying to make a difference in the community by contributing our time and knowledge.",
       },
       {
         question: 'What shall I bring to the meetings?',
@@ -60,7 +60,7 @@ export default {
           "We're here for everyone, from the newbie developer to the facebook superhero developer, we're always keen to help you and to share our knowledge with you. Tag along and learn something new",
       },
       {
-        question: "I'm already a professional developer. why should I go?",
+        question: "I'm already a professional developer. Why should I go?",
         answer:
           "We're not just about code, we strongly encourage networking between our campers and that's one of the strongest points of our meetups.<br>By attending you're giving yourself the chance to meet new like-minded people with whom you can share questions, war stories or even land your next gig.",
       },
