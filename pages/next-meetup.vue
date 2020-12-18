@@ -8,7 +8,7 @@
           </h1>
           <div class="first-event">
             <div class="columns">
-              <div class="column is-8 is-offset-2">
+              <div class="column is-8-desktop is-offset-2-desktop">
                 <figure class="is-16by9">
                   <prismic-image :field="document.data.event_image" />
                 </figure>
@@ -16,7 +16,7 @@
             </div>
             <section class="section">
               <div class="columns">
-                <div class="column is-8 is-offset-2">
+                <div class="column is-8-desktop is-offset-2-desktop">
                   <div class="content is-medium">
                     <div class="tags">
                       <span
@@ -27,7 +27,7 @@
                         #{{ category }}
                       </span>
                     </div>
-                    <p class="is-block subtitle is-5">
+                    <p class="is-block subtitle">
                       <span class="mr-2">📅</span>{{ parsedDate.date
                       }}<span class="ml-5 mr-2">⏰</span>{{ parsedDate.time }}
                       <a
@@ -40,12 +40,12 @@
                         >{{ document.data.location_name }}
                       </a>
                     </p>
-                    <p
-                      class="is-block title mt-6 is-1 is-family-secondary has-text-link"
+                    <h1
+                      class="is-block title mt-6 is-family-secondary has-text-link is-spaced"
                     >
                       {{ $prismic.asText(document.data.title) }}
-                    </p>
-                    <p class="subtitle is-5 has-text-link">
+                    </h1>
+                    <p class="subtitle has-text-link">
                       By
                       <prismic-link
                         class="has-text-weight-bold link"
@@ -61,10 +61,10 @@
                       {{ $prismic.asText(document.data.description) }}
                     </p>
                     <div class="my-6">
-                      <h2 class="title is-3 has-text-link">
+                      <h3 class="is-3 has-text-link">
                         <span class="mr-2">💭</span>Some important things to
                         keep in mind
-                      </h2>
+                      </h3>
                       <div
                         v-if="$prismic.asText(document.data.requirements)"
                         class="content"
@@ -75,7 +75,7 @@
                       </p>
                     </div>
                     <div class="my-6">
-                      <h2 class="title is-3 has-text-link">
+                      <h2 class="is-3 has-text-link">
                         <span class="mr-2">🔗</span>Some links you may find
                         useful
                       </h2>
