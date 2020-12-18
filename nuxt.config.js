@@ -66,6 +66,7 @@ export default {
   ],
   prismic: {
     endpoint: process.env.PRISMIC_API_URL,
+    preview: process.env.NODE_ENV !== 'production',
     /* see configuration for more */
   },
 
