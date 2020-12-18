@@ -20,8 +20,8 @@
             <p>
               No matter if you've just started writing your first lines of code
               or if you're an experienced developer. No fear, my dear, all you
-              need is will power to connect with our community! Learn and share
-              your knowledge.
+              need is the will power to connect with our community! Learn and
+              share your knowledge.
             </p>
             <p class="has-text-weight-bold">
               Sharing is caring and it's never too late to learn, that's our

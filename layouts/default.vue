@@ -99,7 +99,7 @@
       <div class="content has-text-centered">
         <p>
           Made with <span class="has-text-danger">❤️</span> by
-          <a href="http://freecodecamplisbon.org">freeCodeCamp Lisbon</a>
+          <nuxt-link to="/">freeCodeCamp Lisbon</nuxt-link>
         </p>
       </div>
     </footer>
