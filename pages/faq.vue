@@ -78,7 +78,7 @@ export default {
           <li>Streaming material</li>
         </ul>
         Or simply help us buy a coffee! Developers <span class="has-text-danger">❤️</span> coffee! <br />
-         <a class="is-inline-block has-background-link has-text-white p-3 mt-5 is-family-secondary has-text-weight-medium btn-coffee is-size-6" target="_blank" href="https://www.buymeacoffee.com/fccLisbon">
+         <a class="is-inline-block has-background-link has-text-white p-3 mt-5 is-family-secondary has-text-weight-medium btn-coffee is-size-6" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/fccLisbon">
           ☕ Buy me a BICA
          </a>
         `,

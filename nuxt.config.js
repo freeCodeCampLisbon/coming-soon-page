@@ -96,10 +96,10 @@ export default {
 
   robots: [
     {
-      Disallow: '/_nuxt',
+      Disallow: process.env.CLIENT_URL + '/_nuxt',
     },
     {
-      sitemap: '/sitemap.xml',
+      sitemap: process.env.CLIENT_URL + '/sitemap.xml',
     },
   ],
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
