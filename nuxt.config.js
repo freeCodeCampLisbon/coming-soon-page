@@ -58,10 +58,15 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/prismic',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     '@nuxtjs/dotenv',
   ],
+  prismic: {
+    endpoint: process.env.PRISMIC_API_URL,
+    /* see configuration for more */
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
