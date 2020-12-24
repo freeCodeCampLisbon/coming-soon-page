@@ -39,7 +39,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'http://cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css',
+          'https://cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css',
         body: true,
       },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

@@ -149,6 +149,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.navbar-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
 .navbar-item img {
   height: 3.75rem;
   max-height: 3.75rem;

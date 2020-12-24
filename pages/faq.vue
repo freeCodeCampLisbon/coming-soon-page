@@ -46,7 +46,7 @@ export default {
                   .map(
                     (tag) => `<span
 
-                  class="tag mx-2 has-text-info is-link is-size-6"
+                  class="tag m-2 has-text-info is-link is-size-6"
                 >
                   #${tag}
                 </span>`
