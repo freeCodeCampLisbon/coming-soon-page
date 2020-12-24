@@ -469,7 +469,19 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `${process.env.CLIENT_URL}/privacy-policy`,
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style scoped>

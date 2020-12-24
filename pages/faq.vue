@@ -91,6 +91,17 @@ export default {
       },
     ],
   }),
+  head() {
+    return {
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `${process.env.CLIENT_URL}/faq`,
+        },
+      ],
+    }
+  },
 }
 </script>
 
