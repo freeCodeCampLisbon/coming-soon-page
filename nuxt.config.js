@@ -43,11 +43,6 @@ export default {
         body: true,
       },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        hid: 'canonical',
-        rel: 'canonical',
-        href: global.siteUrl,
-      },
     ],
   },
 
