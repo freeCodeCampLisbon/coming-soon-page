@@ -10,6 +10,8 @@
           <div class="navbar-brand">
             <nuxt-link to="/" class="navbar-item pl-0">
               <img
+                width="260"
+                height="60"
                 src="/img/freecodecamp_white_horizontal_orange.svg"
                 srcset="
                   /img/freecodecamp_white_horizontal_orange@2x.png 2x,
@@ -57,7 +59,7 @@
                 FAQS
               </nuxt-link>
               <a
-                class="navbar-item has-background-link has-text-white is-family-secondary has-text-weight-medium btn-coffee mx-4"
+                class="navbar-item has-background-link has-text-info is-family-secondary has-text-weight-medium btn-coffee mx-4"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.buymeacoffee.com/fccLisbon"

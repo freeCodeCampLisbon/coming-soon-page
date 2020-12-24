@@ -5,12 +5,12 @@
     :name="$attrs.name || $attrs.label"
     :rules="rules"
   >
+    <label :for="vid" class="is-sr-only" v-text="label"></label>
     <b-field
       v-bind="$attrs"
       :type="{ 'is-danger': errors[0], 'is-success': valid }"
       :message="errors"
     >
-      <label :for="vid" class="is-sr-only" v-text="label"></label>
       <b-input :id="vid" v-model="innerValue" v-bind="$attrs"></b-input>
     </b-field>
   </ValidationProvider>

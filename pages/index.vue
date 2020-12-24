@@ -61,7 +61,7 @@
             <div class="column is-4 is-2-desktop">
               <b-button
                 type="is-link"
-                class="is-fullwidth submit"
+                class="is-fullwidth has-text-info"
                 :class="{ 'is-loading': loading }"
                 :disabled="loading"
                 @click="handleSubmit(submit)"

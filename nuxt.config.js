@@ -36,6 +36,12 @@ export default {
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
     link: [
+      {
+        rel: 'stylesheet',
+        href:
+          'http://cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css',
+        body: true,
+      },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         hid: 'canonical',
@@ -80,6 +86,9 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
   ],
+  buefy: {
+    materialDesignIcons: false,
+  },
 
   'google-gtag': {
     id: process.env.G_TAG,
