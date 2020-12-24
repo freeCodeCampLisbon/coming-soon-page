@@ -36,6 +36,12 @@ export default {
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
     link: [
+      {
+        rel: 'stylesheet',
+        href:
+          'https://cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css',
+        body: true,
+      },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         hid: 'canonical',
@@ -66,7 +72,8 @@ export default {
   ],
   prismic: {
     endpoint: process.env.PRISMIC_API_URL,
-    preview: process.env.NODE_ENV !== 'production',
+    preview: false,
+    // process.env.NODE_ENV !== 'production',
     /* see configuration for more */
   },
 
@@ -80,6 +87,9 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
   ],
+  buefy: {
+    materialDesignIcons: false,
+  },
 
   'google-gtag': {
     id: process.env.G_TAG,

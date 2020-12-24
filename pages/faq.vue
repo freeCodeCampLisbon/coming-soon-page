@@ -8,7 +8,7 @@
         <div class="content">
           <ol class="block is-family-primary mb-0">
             <li v-for="({ question, answer }, i) in faq" :key="i" class="mb-6">
-              <h5 class="title is-size-5 has-text-link">{{ question }}</h5>
+              <h2 class="title is-size-5 has-text-link">{{ question }}</h2>
               <p class="mt-2 is-family-primary" v-html="answer" />
             </li>
           </ol>
@@ -46,7 +46,7 @@ export default {
                   .map(
                     (tag) => `<span
 
-                  class="tag mx-2 is-link is-size-6"
+                  class="tag m-2 has-text-info is-link is-size-6"
                 >
                   #${tag}
                 </span>`
@@ -84,7 +84,7 @@ export default {
           <li>Streaming material</li>
         </ul>
         Or simply help us buy a coffee! Developers <span class="has-text-danger">❤️</span> coffee! <br />
-         <a class="is-inline-block has-background-link has-text-white p-3 mt-5 is-family-secondary has-text-weight-medium btn-coffee is-size-6" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/fccLisbon">
+         <a class="is-inline-block has-background-link has-text-info p-3 mt-5 is-family-secondary has-text-weight-medium btn-coffee is-size-6" target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/fccLisbon">
           ☕ Buy me a BICA
          </a>
         `,
