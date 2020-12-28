@@ -119,7 +119,7 @@ export default {
   ],
 
   purgeCSS: {
-		whitelistPatterns: [/mdi/, /icon/, /is-grouped/, /select/, /switch/, /modal/, /b-tabs/, /autocomplete/, /dropdown/]
+		whitelistPatterns: [/^mdi/, /^icon/, /^is-[a-zA-Z]+/, /^has-[a-zA-Z]+/, /^notification/, /^notices/],
   },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
