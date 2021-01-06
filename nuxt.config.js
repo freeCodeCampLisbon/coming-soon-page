@@ -111,7 +111,7 @@ export default {
   robots: [
     {
       UserAgent: '*',
-      Disallow: '/_nuxt/',
+      Disallow: process.env.ENV === 'production' ? '/_nuxt/' : '/',
     },
     {
       sitemap: process.env.CLIENT_URL + '/sitemap.xml',
@@ -119,7 +119,14 @@ export default {
   ],
 
   purgeCSS: {
-		whitelistPatterns: [/^mdi/, /^icon/, /^is-[a-zA-Z]+/, /^has-[a-zA-Z]+/, /^notification/, /^notices/],
+    whitelistPatterns: [
+      /^mdi/,
+      /^icon/,
+      /^is-[a-zA-Z]+/,
+      /^has-[a-zA-Z]+/,
+      /^notification/,
+      /^notices/,
+    ],
   },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
