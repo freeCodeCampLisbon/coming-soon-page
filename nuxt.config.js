@@ -67,6 +67,7 @@ export default {
   ],
   prismic: {
     endpoint: process.env.PRISMIC_API_URL,
+    preview: '/preview/',
     /* see configuration for more */
   },
 
