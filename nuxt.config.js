@@ -67,8 +67,6 @@ export default {
   ],
   prismic: {
     endpoint: process.env.PRISMIC_API_URL,
-    preview: false,
-    // process.env.NODE_ENV !== 'production',
     /* see configuration for more */
   },
 
@@ -100,7 +98,7 @@ export default {
   pageTransition: 'page',
 
   generate: {
-    fallback: '404.html',
+    fallback: true,
   },
 
   sitemap: {

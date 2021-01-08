@@ -4,7 +4,7 @@ export default function (doc) {
   }
 
   if (doc.type === 'homepage') {
-    return '/ '
+    return '/'
   }
 
   if (doc.type === 'page') {
