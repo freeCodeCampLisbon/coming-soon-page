@@ -68,6 +68,14 @@ export default {
   prismic: {
     endpoint: process.env.PRISMIC_API_URL,
     preview: '/preview/',
+    apiOptions: {
+      routes: [
+        {
+          type: 'meetups',
+          path: '/next-meetup',
+        },
+      ],
+    },
     /* see configuration for more */
   },
 
