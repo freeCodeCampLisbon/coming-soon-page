@@ -35,7 +35,7 @@
           :disabled="loading"
           @click="handleSubmit(submit)"
         />
-        <b-button label="Close" @click="$emit('close')" />
+        <b-button label="Close" type="is-danger" @click="$emit('close')" />
       </footer>
     </div>
   </ValidationObserver>
