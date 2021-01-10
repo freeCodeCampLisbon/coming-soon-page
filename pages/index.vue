@@ -92,13 +92,10 @@ export default {
     async submit() {
       try {
         this.loading = true
-        await this.$axios.$post(
-          '/.netlify/functions/newsletter',
-          JSON.stringify({
-            name: this.name,
-            email: this.email,
-          })
-        )
+        await this.$axios.$post('newsletter', {
+          name: this.name,
+          email: this.email,
+        })
 
         const notif = this.$buefy.notification.open({
           duration: 5000,

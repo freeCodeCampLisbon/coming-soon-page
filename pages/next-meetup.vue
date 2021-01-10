@@ -85,14 +85,14 @@
                     </div>
                   </div>
                   <div class="is-flex is-justify-content-center mt-6">
-                    <a
-                      :href="$prismic.asLink(document.data.meetup_link)"
+                    <button
+                      @click="subscribeToEvent(document)"
                       class="button has-background-link p-5 is-family-secondary has-text-weight-medium has-text-white button-link btn-coffee"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Reserve your seat now
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -111,6 +111,8 @@
 </template>
 
 <script>
+import ReserveYourSeatModalVue from '~/components/ReserveYourSeatModal.vue'
+
 export default {
   async asyncData({ $prismic, error }) {
     try {
@@ -123,6 +125,9 @@ export default {
       console.log('error: ', error)
     }
   },
+  data: () => ({
+    isModalActive: false,
+  }),
   computed: {
     parsedDate() {
       if (!this.document)
@@ -139,6 +144,22 @@ export default {
           minute: 'numeric',
         }),
       }
+    },
+  },
+  methods: {
+    subscribeToEvent(document) {
+      this.isModalActive = !this.isModalActive
+      this.$buefy.modal.open({
+        parent: this,
+        component: ReserveYourSeatModalVue,
+        hasModalCard: true,
+        trapFocus: true,
+        props: {
+          uid: document.uid,
+          date: document.data.date_time,
+          isActive: this.isModalActive,
+        },
+      })
     },
   },
   head() {
