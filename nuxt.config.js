@@ -133,6 +133,9 @@ export default {
       /^has-[a-zA-Z]+/,
       /^notification/,
       /^notices/,
+      /^modal/,
+      /^animation/,
+      /^content/,
     ],
   },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
