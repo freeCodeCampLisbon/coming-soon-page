@@ -112,7 +112,7 @@
 
 <script>
 import ReserveYourSeatModalVue from '~/components/ReserveYourSeatModal.vue'
-
+import getMeta from '~/utils/meta'
 export default {
   async asyncData({ $prismic, error }) {
     try {
@@ -128,6 +128,25 @@ export default {
   data: () => ({
     isModalActive: false,
   }),
+  head() {
+    const meta = {
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `${process.env.CLIENT_URL}/next-meetup`,
+        },
+      ],
+    }
+    if (this.document)
+      meta.meta = getMeta({
+        url: `${process.env.CLIENT_URL}/next-meetup`,
+        title: this.$prismic.asText(this.document.data.title),
+        description: this.$prismic.asText(this.document.data.description),
+        img: this.document.data.event_image.url,
+      })
+    return meta
+  },
   computed: {
     parsedDate() {
       if (!this.document)
@@ -161,17 +180,6 @@ export default {
         },
       })
     },
-  },
-  head() {
-    return {
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `${process.env.CLIENT_URL}/next-meetup`,
-        },
-      ],
-    }
   },
 }
 </script>
