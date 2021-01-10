@@ -310,6 +310,9 @@ module.exports = {
         }
       ]
     },
+    "strong-color": {
+      "calls": []
+    },
     "text": {
       "calls": [
         {

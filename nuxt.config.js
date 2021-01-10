@@ -67,8 +67,15 @@ export default {
   ],
   prismic: {
     endpoint: process.env.PRISMIC_API_URL,
-    preview: false,
-    // process.env.NODE_ENV !== 'production',
+    preview: '/preview/',
+    apiOptions: {
+      routes: [
+        {
+          type: 'meetups',
+          path: '/next-meetup',
+        },
+      ],
+    },
     /* see configuration for more */
   },
 
@@ -100,7 +107,7 @@ export default {
   pageTransition: 'page',
 
   generate: {
-    fallback: '404.html',
+    fallback: true,
   },
 
   sitemap: {
@@ -111,7 +118,7 @@ export default {
   robots: [
     {
       UserAgent: '*',
-      Disallow: '/_nuxt/',
+      Disallow: process.env.ENV === 'production' ? '/_nuxt/' : '/',
     },
     {
       sitemap: process.env.CLIENT_URL + '/sitemap.xml',
@@ -119,7 +126,17 @@ export default {
   ],
 
   purgeCSS: {
-		whitelistPatterns: [/^mdi/, /^icon/, /^is-[a-zA-Z]+/, /^has-[a-zA-Z]+/, /^notification/, /^notices/],
+    whitelistPatterns: [
+      /^mdi/,
+      /^icon/,
+      /^is-[a-zA-Z]+/,
+      /^has-[a-zA-Z]+/,
+      /^notification/,
+      /^notices/,
+      /^modal/,
+      /^animation/,
+      /^content/,
+    ],
   },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {

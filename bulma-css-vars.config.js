@@ -6,6 +6,7 @@ const appColors = {
 
 appColors['body-background-color'] = appColors.info
 appColors.text = appColors.primary
+appColors['strong-color'] = appColors.info
 
 module.exports = {
   jsOutputFile: 'assets/styles/bulma-generated/bulma-colors.js',
