@@ -6,7 +6,6 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "netlify:dev": "netlify dev",
     "update:bulma": "bulma-css-vars",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
