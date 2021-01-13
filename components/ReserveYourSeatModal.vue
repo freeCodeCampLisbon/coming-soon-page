@@ -105,7 +105,7 @@ export default {
         this.loading = true
         const reserve = await this.$axios.$post('reserve-seat', {
           name: this.name,
-          email: 'loles',
+          email: this.email,
           sub_newsletter: this.checkNewsletter,
           date: this.date,
           uid: this.uid,
