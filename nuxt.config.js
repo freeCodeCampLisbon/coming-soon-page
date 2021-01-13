@@ -14,7 +14,7 @@ export default {
     htmlAttrs: {
       lang: 'en-GB',
     },
-    title: 'freeCodeCamp Lisbon - dev events based on Lisbon',
+    title: 'freeCodeCamp Lisbon - dev events based in Lisbon',
     meta: [
       ...meta,
       { charset: 'utf-8' },

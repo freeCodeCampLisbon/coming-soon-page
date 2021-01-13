@@ -1,14 +1,13 @@
 @font-face {
   font-family: 'fcc';
-  src: url('fcc.eot?79834859');
-  src: url('fcc.eot?79834859#iefix') format('embedded-opentype'),
-    url('fcc.woff2?79834859') format('woff2'),
-    url('fcc.woff?79834859') format('woff'),
-    url('fcc.ttf?79834859') format('truetype'),
-    url('fcc.svg?79834859#fcc') format('svg');
+  src: url('fcc.eot?45253932');
+  src: url('fcc.eot?45253932#iefix') format('embedded-opentype'),
+    url('fcc.woff2?45253932') format('woff2'),
+    url('fcc.woff?45253932') format('woff'),
+    url('fcc.ttf?45253932') format('truetype'),
+    url('fcc.svg?45253932#fcc') format('svg');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -16,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fcc';
-    src: url('fcc.svg?79834859#fcc') format('svg');
+    src: url('fcc.svg?45253932#fcc') format('svg');
   }
 }
 */
@@ -69,6 +68,12 @@
 .icon-github:before {
   content: '\f09b';
 } /* '' */
+.icon-youtube:before {
+  content: '\f16a';
+} /* '' */
+.icon-twitch:before {
+  content: '\f1e8';
+} /* '' */
 .icon-meetup:before {
   content: '\f2e0';
 } /* '' */
