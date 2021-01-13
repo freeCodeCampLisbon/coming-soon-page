@@ -22,7 +22,8 @@
     "mailchimp-api-v3": "^1.14.0",
     "nuxt": "^2.14.12",
     "nuxt-buefy": "^0.4.3",
-    "vee-validate": "^3.4.5"
+    "vee-validate": "^3.4.5",
+    "vue-plyr": "^7.0.0"
   },
   "devDependencies": {
     "@nuxtjs/dotenv": "^1.4.1",

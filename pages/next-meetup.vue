@@ -8,7 +8,7 @@
           </h1>
           <div class="first-event">
             <div class="columns">
-              <div class="column is-8-desktop is-offset-2-desktop">
+              <div class="column is-12 is-8-desktop is-offset-2-desktop">
                 <figure class="is-16by9">
                   <prismic-image :field="document.data.event_image" />
                 </figure>
@@ -86,10 +86,10 @@
                   </div>
                   <div class="is-flex is-justify-content-center mt-6">
                     <button
-                      @click="subscribeToEvent(document)"
                       class="button has-background-link p-5 is-family-secondary has-text-weight-medium has-text-white button-link btn-coffee"
                       target="_blank"
                       rel="noopener noreferrer"
+                      @click="subscribeToEvent(document)"
                     >
                       Reserve your seat now
                     </button>
@@ -128,25 +128,6 @@ export default {
   data: () => ({
     isModalActive: false,
   }),
-  head() {
-    const meta = {
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `${process.env.CLIENT_URL}/next-meetup`,
-        },
-      ],
-    }
-    if (this.document)
-      meta.meta = getMeta({
-        url: `${process.env.CLIENT_URL}/next-meetup`,
-        title: this.$prismic.asText(this.document.data.title),
-        description: this.$prismic.asText(this.document.data.description),
-        img: this.document.data.event_image.url,
-      })
-    return meta
-  },
   computed: {
     parsedDate() {
       if (!this.document)
@@ -180,6 +161,25 @@ export default {
         },
       })
     },
+  },
+  head() {
+    const meta = {
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `${process.env.CLIENT_URL}/next-meetup`,
+        },
+      ],
+    }
+    if (this.document)
+      meta.meta = getMeta({
+        url: `${process.env.CLIENT_URL}/next-meetup`,
+        title: this.$prismic.asText(this.document.data.title),
+        description: this.$prismic.asText(this.document.data.description),
+        img: this.document.data.event_image.url,
+      })
+    return meta
   },
 }
 </script>
