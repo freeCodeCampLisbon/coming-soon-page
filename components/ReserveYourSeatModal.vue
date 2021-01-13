@@ -5,29 +5,47 @@
         <p class="modal-card-title">Reserve your seat</p>
         <button type="button" class="delete" @click="$emit('close')" />
       </header>
-      <section class="modal-card-body content mb-0">
+      <section class="modal-card-body">
         <div class="content has-text-info">
           <p>
             <strong>Thank you for your interest in our event!</strong>
           </p>
-          <b-field label="Name">
-            <b-input
-              v-model="name"
-              type="name"
-              placeholder="What's your name?"
-              required
+          <ValidationProvider
+            v-slot="{ errors, valid }"
+            rules="required"
+            name="name"
+            vid="name"
+            slim
+          >
+            <b-field
+              label="Name"
+              :type="{ 'is-danger': errors[0], 'is-success': valid }"
+              :message="errors"
             >
-            </b-input>
-          </b-field>
-          <b-field label="Email">
-            <b-input
-              v-model="email"
-              type="email"
-              placeholder="Your email"
-              required
+              <b-input
+                v-model="name"
+                type="name"
+                placeholder="What's your name?"
+              >
+              </b-input>
+            </b-field>
+          </ValidationProvider>
+          <ValidationProvider
+            v-slot="{ errors, valid }"
+            rules="required|email"
+            name="email"
+            vid="email"
+            slim
+          >
+            <b-field
+              label="Email"
+              :type="{ 'is-danger': errors[0], 'is-success': valid }"
+              :message="errors"
             >
-            </b-input>
-          </b-field>
+              <b-input v-model="email" type="email" placeholder="Your email">
+              </b-input>
+            </b-field>
+          </ValidationProvider>
           <b-field>
             <b-checkbox v-model="checkNewsletter" type="is-success">
               Also subscribe to our newsletter
@@ -51,11 +69,12 @@
 </template>
 
 <script>
-import { ValidationObserver } from 'vee-validate'
+import { ValidationObserver, ValidationProvider } from 'vee-validate'
 
 export default {
   components: {
     ValidationObserver,
+    ValidationProvider,
   },
   props: {
     isActive: {
@@ -86,7 +105,7 @@ export default {
         this.loading = true
         const reserve = await this.$axios.$post('reserve-seat', {
           name: this.name,
-          email: this.email,
+          email: 'loles',
           sub_newsletter: this.checkNewsletter,
           date: this.date,
           uid: this.uid,
@@ -108,11 +127,19 @@ export default {
       } catch (error) {
         this.loading = false
         const emoji = error.response.data.type === 'warning' ? '⚠️' : '☠️'
+
+        this.$refs.observer.setErrors(...error.response.data.details)
+
         this.$buefy.notification.open({
           duration: 3000,
           message: `${error.response.data.message} ${emoji}`,
           position: 'is-top',
-          type: `is-${error.response.data.type}`,
+          type: `is-${
+            error.response.status === 400 &&
+            error.response.data.type === undefined
+              ? 'danger'
+              : error.response.data.type
+          }`,
           closable: true,
         })
       }
