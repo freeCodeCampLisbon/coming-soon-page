@@ -128,7 +128,8 @@ export default {
         this.loading = false
         const emoji = error.response.data.type === 'warning' ? '⚠️' : '☠️'
 
-        this.$refs.observer.setErrors(...error.response.data.details)
+        if (error.response.data.details)
+          this.$refs.observer.setErrors(error.response.data.details[0])
 
         this.$buefy.notification.open({
           duration: 3000,
