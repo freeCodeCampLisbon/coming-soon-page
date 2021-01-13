@@ -10,6 +10,15 @@
           <p>
             <strong>Thank you for your interest in our event!</strong>
           </p>
+          <b-field label="Name">
+            <b-input
+              v-model="name"
+              type="name"
+              placeholder="What's your name?"
+              required
+            >
+            </b-input>
+          </b-field>
           <b-field label="Email">
             <b-input
               v-model="email"
@@ -67,6 +76,7 @@ export default {
   },
   data: () => ({
     email: '',
+    name: '',
     loading: false,
     checkNewsletter: false,
   }),
@@ -75,6 +85,7 @@ export default {
       try {
         this.loading = true
         const reserve = await this.$axios.$post('reserve-seat', {
+          name: this.name,
           email: this.email,
           sub_newsletter: this.checkNewsletter,
           date: this.date,

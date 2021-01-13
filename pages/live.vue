@@ -33,6 +33,8 @@
 </template>
 
 <script>
+import getMeta from '~/utils/meta'
+
 export default {
   async asyncData({ $prismic, error }) {
     try {
@@ -48,8 +50,27 @@ export default {
   data: () => ({
     article: [],
   }),
-  mounted() {
-    console.log(this.article)
+  head() {
+    const meta = {
+      title: `freeCodeCamp Lisbon - 🔴 LIVE - ${this.$prismic.asText(
+        this.article.data.title
+      )}`,
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `${process.env.CLIENT_URL}/live`,
+        },
+      ],
+    }
+
+    if (this.article)
+      meta.meta = getMeta({
+        url: `${process.env.CLIENT_URL}/live`,
+        description: this.$prismic.asText(this.article.data.description),
+        img: this.article.data.event_image.url,
+      })
+    return meta
   },
 }
 </script>

@@ -24,7 +24,7 @@ export default (meta) => {
     {
       hid: 'og:title',
       property: 'og:title',
-      content: (meta && meta.title) || global.siteTitle,
+      content: (meta && meta.title) || global.title,
     },
     {
       hid: 'og:description',

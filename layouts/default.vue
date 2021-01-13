@@ -135,6 +135,10 @@ export default {
         link: 'https://www.meetup.com/pt-BR/freeCodeCamp-Lisbon/',
       },
       {
+        icon: 'youtube',
+        link: 'https://www.youtube.com/channel/UCuLddvNje_Dc2J3sCxYVdoA',
+      },
+      {
         icon: 'mail',
         link: 'mailto:info@freecodecamplisbon.org',
       },
@@ -149,7 +153,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.navbar-menu {
+.navbar-menu.is-active {
   position: absolute;
   left: 0;
   right: 0;
