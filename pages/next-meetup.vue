@@ -164,6 +164,9 @@ export default {
   },
   head() {
     const meta = {
+      title: `freeCodeCamp Lisbon - ${this.$prismic.asText(
+        this.document.data.title
+      )}`,
       link: [
         {
           hid: 'canonical',
@@ -175,7 +178,6 @@ export default {
     if (this.document)
       meta.meta = getMeta({
         url: `${process.env.CLIENT_URL}/next-meetup`,
-        title: this.$prismic.asText(this.document.data.title),
         description: this.$prismic.asText(this.document.data.description),
         img: this.document.data.event_image.url,
       })
