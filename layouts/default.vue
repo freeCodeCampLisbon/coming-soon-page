@@ -70,7 +70,7 @@
                 class="navbar-item has-background-link has-text-info is-family-secondary has-text-weight-medium btn-coffee mx-4"
                 to="/submit-idea"
               >
-                Submit idea
+                Meetup Proposal
               </nuxt-link>
             </div>
           </div>
