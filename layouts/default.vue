@@ -68,8 +68,6 @@
               </a>
               <nuxt-link
                 class="navbar-item has-background-link has-text-info is-family-secondary has-text-weight-medium btn-coffee mx-4"
-                target="_blank"
-                rel="noopener noreferrer"
                 to="/submit-idea"
               >
                 Submit idea
