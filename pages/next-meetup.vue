@@ -120,7 +120,7 @@ export default {
         orderings: '[my.meetups.date_time desc]',
       })
 
-      return { document }
+      return { document: document && document.data ? document : null }
     } catch (error) {
       console.log('error: ', error)
     }
@@ -164,9 +164,6 @@ export default {
   },
   head() {
     const meta = {
-      title: `freeCodeCamp Lisbon - ${this.$prismic.asText(
-        this.document.data.title
-      )}`,
       link: [
         {
           hid: 'canonical',
@@ -175,12 +172,19 @@ export default {
         },
       ],
     }
-    if (this.document)
+    if (this.document) {
+      meta.title = `freeCodeCamp Lisbon - ${this.$prismic.asText(
+        this.document.data.title
+      )}`
       meta.meta = getMeta({
         url: `${process.env.CLIENT_URL}/next-meetup`,
         description: this.$prismic.asText(this.document.data.description),
         img: this.document.data.event_image.url,
       })
+    } else {
+      meta.title =
+        "freeCodeCamp Lisbon - There's currently no meetups in the pipeline 💻"
+    }
     return meta
   },
 }
