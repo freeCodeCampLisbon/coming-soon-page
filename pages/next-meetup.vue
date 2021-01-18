@@ -184,6 +184,10 @@ export default {
     } else {
       meta.title =
         "freeCodeCamp Lisbon - There's currently no meetups in the pipeline 💻"
+      meta.meta = getMeta({
+        description:
+          "freeCodeCamp Lisbon - There's currently no meetups in the pipeline 💻",
+      })
     }
     return meta
   },
