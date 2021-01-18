@@ -185,7 +185,7 @@ export default {
       meta.title =
         "freeCodeCamp Lisbon - There's currently no meetups in the pipeline 💻"
       meta.meta = getMeta({
-        description:
+        title:
           "freeCodeCamp Lisbon - There's currently no meetups in the pipeline 💻",
       })
     }
