@@ -18,7 +18,7 @@
               <div class="columns">
                 <div class="column is-8-desktop is-offset-2-desktop">
                   <div class="content is-medium">
-                    <div class="tags">
+                    <div v-if="document.data.tech" class="tags">
                       <span
                         v-for="(category, idx) in document.data.tech.split(',')"
                         :key="idx"
